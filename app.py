@@ -7,8 +7,9 @@ import json
 import re
 
 from openai import OpenAI
-apikey = "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"
+st.write("Secrets:", st.secrets)
 
+apikey = st.secrets["apikey"]
 openai.api_key = apikey
 
 # --- App Title ---
